@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-CommunicationServices-54c6184a-60c7-48ac-82fe-1256c57353a2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JT808" Version="2.6.5" />
+    <PackageReference Include="JT808.DotNetty.Core" Version="2.3.6" />
+    <PackageReference Include="JT808.Protocol.Extensions.JT1078" Version="2.6.5" />
+    <PackageReference Include="MessagePack" Version="2.5.140" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommunicationProtocol\CommunicationProtocol.csproj" />
+    <ProjectReference Include="..\Lth.Socket.NetCore\LthSocket.NetCore.csproj" />
+  </ItemGroup>
+</Project>
